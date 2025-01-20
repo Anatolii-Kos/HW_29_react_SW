@@ -1,8 +1,8 @@
-import {openingCrawl} from "../utils/constants.js";
+import RandomOpeningCrowl from "./RandomOpeningCrowl.jsx";
 
 const FarGalaxy = () => {
     return (
-        <p className="farGalaxy">{openingCrawl}</p>
+        <RandomOpeningCrowl/>
     );
 };
 

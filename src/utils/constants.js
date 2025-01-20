@@ -33,3 +33,5 @@ export const openingCrawl = `It is a period of civil war.
             stolen plans that can save her
             people and restore
             freedom to the galaxy...`
+
+export const apiSWfilmrandom = `https://sw-info-api.herokuapp.com/v1/films/${Math.floor(Math.random() * 6) + 1}`
