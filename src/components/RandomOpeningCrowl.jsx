@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import SWSpinner from "../utils/spinner/SWspinner.jsx";
+import SWSpinner from "../utils/spinner/SWSpinner.jsx";
 import {apiSWfilmrandom} from "../utils/constants.js";
 
 
