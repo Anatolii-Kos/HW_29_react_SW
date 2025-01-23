@@ -1,8 +1,8 @@
-import RandomOpeningCrowl from "./RandomOpeningCrowl.jsx";
+import RandomOpeningCrawl from "./RandomOpeningCrawl.jsx";
 
 const FarGalaxy = () => {
     return (
-        <RandomOpeningCrowl/>
+        <RandomOpeningCrawl/>
     );
 };
 
