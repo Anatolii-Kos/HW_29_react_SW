@@ -44,3 +44,63 @@ footer {
 .border {
   border-color: #eedb00 !important;
 }
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  min-width: 80vw;
+  min-height: 80vh;
+  padding: 10px;
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #eedb00;
+  min-width: 50%;
+  max-width: 70%;
+  box-shadow: 0 0 10px #eedb00;
+}
+
+.formheader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.input, .select, .textarea {
+  color: #eedb00;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #eedb00;
+  border-radius: 5px;
+  background-color: black;
+ }
+
+.textarea {
+  height: 100px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #eedb00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: gold;
+}

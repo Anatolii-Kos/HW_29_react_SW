@@ -19,6 +19,6 @@ All nine films, collectively referred to as the "Skywalker Saga", were nominated
 export const apiSW = `https://sw-info-api.herokuapp.com`
 
 export const storageTime = (time) => {
-    const suitableInterval = 20000;
+    const suitableInterval = 30*24*60*60*1000;
     return (new Date().getTime() - time) < suitableInterval
 };
