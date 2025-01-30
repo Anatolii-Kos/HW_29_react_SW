@@ -1,9 +1,10 @@
 import {starWarsInfo} from "../utils/constants.js";
+import StyleFarGalaxy from "../UI/StyleFarGalaxy.jsx";
 const StarWars = () => {
     return (
-        <div className="farGalaxy">
+        <StyleFarGalaxy>
             {starWarsInfo}
-        </div>
+        </StyleFarGalaxy>
     );
 };
 export default StarWars;

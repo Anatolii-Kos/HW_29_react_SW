@@ -8,7 +8,7 @@ const RandomOpeningCrawl = () => {
     const [data, setData] = useState(false);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
-    const loadingDelay = 1000
+    const loadingDelay = 3000
 
     useEffect(() => {
 
@@ -54,9 +54,17 @@ const RandomOpeningCrawl = () => {
 
     return (
         <>
-            <p className="farGalaxy">{data}</p>
+            <p>{data}</p>
         </>
     );
 };
 
 export default RandomOpeningCrawl;
+
+/*.farGalaxy {*/
+/*  font-size: 2em;*/
+/*  letter-spacing: 0.2em;*/
+/*  line-height: 1.5;*/
+/*  text-align: justify;*/
+/*  padding: 0.2em;*/
+/*}*/

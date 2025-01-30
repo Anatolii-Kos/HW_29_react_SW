@@ -1,8 +1,12 @@
 import RandomOpeningCrawl from "./RandomOpeningCrawl.jsx";
+import StyleFarGalaxy from "../UI/StyleFarGalaxy.jsx";
 
 const FarGalaxy = () => {
     return (
-        <RandomOpeningCrawl/>
+        <StyleFarGalaxy>
+            <RandomOpeningCrawl/>
+        </StyleFarGalaxy>
+
     );
 };
 

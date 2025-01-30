@@ -7,7 +7,9 @@ const SWSpinner = () => {
             <img
                 src={spinpic}
                 alt="Loading..."
-                className="spinner-image"></img>
+                className="w-[8vw] max-w-[150px] h-auto animate-spin drop-shadow-[0_0_20px_#f8ff0b]"
+                style={{ animationDuration: "2.5s", animationTimingFunction: "linear" }}>
+            </img>
 
         </div>
     )

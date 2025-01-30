@@ -61,37 +61,40 @@ const Contact = () => {
     };
 
     return (
-        <div className="container">
-            <form className="form " onSubmit={handleSubmit}>
-                <h1 className="formheader">Contact Me</h1>
+        <div className="flex justify-start items-start min-w-[80vw] min-h-[80vh] p-2">
+            <form
+                className="bg-black/80 p-5 rounded-lg border-2 border-yellow-400 min-w-[50%] max-w-[70%] shadow-[0_0_10px_#eedb00]"
+                onSubmit={handleSubmit}
+            >
+                <h1 className="text-center mb-5 text-white text-xl font-semibold">Contact Me</h1>
 
-                <label className="label">First Name</label>
+                <label className="block mb-2 text-sm text-white">First Name</label>
                 <input
                     type="text"
                     name="firstName"
                     placeholder="Your first name.."
                     value={formData.firstName}
                     onChange={handleChange}
-                    className="input"
+                    className="w-full p-2 mb-4 border border-yellow-400 rounded bg-black text-yellow-400 placeholder-gray-500"
                 />
 
-                <label className="label">Last Name</label>
+                <label className="block mb-2 text-sm text-white">Last Name</label>
                 <input
                     type="text"
                     name="lastName"
                     placeholder="Your last name.."
                     value={formData.lastName}
                     onChange={handleChange}
-                    className="input"
+                    className="w-full p-2 mb-4 border border-yellow-400 rounded bg-black text-yellow-400 placeholder-gray-500"
                 />
 
-                <label className="label">Planet</label>
+                <label className="block mb-2 text-sm text-white">Planet</label>
                 <select
                     name="planet"
                     value={formData.planet}
                     onChange={handleChange}
-                    className="select"
-                    >
+                    className="w-full p-2 mb-4 border border-yellow-400 rounded bg-black text-yellow-400"
+                >
                     <option value="">Select a planet</option>
                     {Array.isArray(data) &&
                         data.slice(0, -1).map((planet, index) => (
@@ -101,16 +104,21 @@ const Contact = () => {
                         ))}
                 </select>
 
-                <label className="label">Message</label>
+                <label className="block mb-2 text-sm text-white">Message</label>
                 <textarea
                     name="subject"
                     placeholder="Write something.."
                     value={formData.subject}
                     onChange={handleChange}
-                    className="textarea"
+                    className="w-full p-2 mb-4 border border-yellow-400 rounded bg-black text-yellow-400 h-24 resize-none"
                 ></textarea>
 
-                <button type="submit" className="button">Submit</button>
+                <button
+                    type="submit"
+                    className="w-full p-2 bg-yellow-400 text-black rounded cursor-pointer text-lg font-medium hover:bg-yellow-300 transition"
+                >
+                    Submit
+                </button>
             </form>
         </div>
     );

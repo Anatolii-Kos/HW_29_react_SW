@@ -61,14 +61,15 @@ const AboutMe = () => {
 
     return (
         <>
-            <h3 className='mx-4'>About me:</h3>
+            <h3 className='mx8-'>About me:</h3>
             {data && typeof data === "object" ? (
-                <ul className='list-group-flush text-capitalize '>
+                <ul className='lowercase '>
                     {Object.entries(data)
                         .filter(([key]) => key !== "createTime")
                         .map(([key, value]) => (
-                        <li key={key} className={'list-group-item '}>
-                            <strong className='text-danger'>{key.replace(/_/g, " ")}:</strong> {String(value)}
+                        <li key={key} className={'text-[2em] tracking-widest leading-14 ml-8'}>
+                            <strong className=''>{key.replace('_', " ")}:</strong>
+                            <p className='text-3xl capitalize'>{String(value)}</p>
                         </li>
                     ))}
                 </ul>
